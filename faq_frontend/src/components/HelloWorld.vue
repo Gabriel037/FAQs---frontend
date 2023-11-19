@@ -1,4 +1,5 @@
 <template>
+
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h1>Uarles mkt 21</h1>
@@ -7,6 +8,10 @@
       check out the
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
+
+    <div class="alert alert-primary" role="alert">
+      Um simples alerta primary. Olha só!
+    </div>
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
@@ -32,8 +37,13 @@
 </template>
 
 <script>
+
+// Importe o Bootstrap
+import 'node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+
 export default {
-  name: 'HelloWorld',
+  name: 'HelloWorld2',
   props: {
     msg: String
   }
